@@ -2,5 +2,5 @@
 RemoteSystemsTempFiles
 .recommenders
 .metadata
-.o
-.exe
+*.o
+*.exe
