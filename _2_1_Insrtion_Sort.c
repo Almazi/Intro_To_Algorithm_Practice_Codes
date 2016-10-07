@@ -14,19 +14,22 @@ void insertion_sort(int array[], int size){
     }
     printf("The sorted array is: ");
     for(i = 0; i < size; i ++){
-        printf("%d", array[i]);
+        printf("%d, ", array[i]);
     }
 }
 
 void main(){
     int size = 0;
     int i = 0;
-    int array[size];
     printf("Array size: ");
     scanf("%d", &size);
+
+
+    int array[size];
     printf("Array inputs: ");
     for(i = 0; i < size; i++){
         scanf("%d",&array[i]);
+        printf("%d",i+1);
     }
     insertion_sort(array, size);
 
