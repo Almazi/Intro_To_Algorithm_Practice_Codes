@@ -6,7 +6,7 @@ void insertion_sort(int array[], int size){
     for(j = 1; j < size; j++){
         key = array[j]; //Key is the second element of the array, our job is to prove its smaller than its previous element.
         i = j - 1; //taking the index of the previous element of key
-        while(i >= 0 && array[i] > key){ //If key is not smaller than its previous element then this block will do the switching
+        while(i >= 0 && array[i] < key){ //If key is not smaller than its previous element then this block will do the switching
             array[i+1] = array[i]; //Storing the array[i] to its next index as it is larger than key
             i = i - 1; //changing the index to the previous one as we will have to compare key with every previous items until i < 0
         }
